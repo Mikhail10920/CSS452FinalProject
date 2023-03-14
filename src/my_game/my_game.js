@@ -83,14 +83,6 @@ class MyGame extends engine.Scene {
     }
 
     init() {
-/*         this.mGrid = new engine.MapGrid(5,5);
-        this.mGrid.setGridPos(30,20);
-        this.mGrid.setTile(this.mDefaultTilePic, 14, 14);
-        this.mGrid.createTilePicturesForGrid();
-        this.mGrid.createObject(this.mCharacterPic, 2,3);
-        this.mGrid.createObject(this.mBushPic, 2,2);
-        this.mGrid.setTileCollisionMode(true, 2,2); */
-
         this.mGrid = new engine.MapGrid(8,8);
         this.mGrid.setGridPos(27,16);
         this.mGrid.setTile(this.mDefaultTilePic, 8, 8);
