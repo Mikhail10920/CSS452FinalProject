@@ -5,11 +5,10 @@ import MapGrid from "../engine/MapGrid.js";
 import Tile from "../engine/renderables/Tile.js";
 
 import Hero from "./hero.js";
-import GameTwo from "./game_two.js";
 
 // potential texture: https://www.pngall.com/spot-light-png/download/68214
 
-class MyGame extends engine.Scene {
+class GameTwo extends engine.Scene {
     constructor() {
         super();
 
@@ -84,7 +83,6 @@ class MyGame extends engine.Scene {
     }
 
     init() {
-        //super.next();
 /*         this.mGrid = new engine.MapGrid(5,5);
         this.mGrid.setGridPos(30,20);
         this.mGrid.setTile(this.mDefaultTilePic, 14, 14);
@@ -118,7 +116,7 @@ class MyGame extends engine.Scene {
         this.mGrid.createObject(this.mBushPic, 2,5);
         this.mGrid.setTileCollisionMode(true, 2,5);
 
-        this.mGrid.createObject(this.mBushPic, 0,3);
+/*         this.mGrid.createObject(this.mBushPic, 0,3);
         this.mGrid.setTileCollisionMode(true, 0,3);
          this.mGrid.createObject(this.mBushPic, 6,3);
         this.mGrid.setTileCollisionMode(true, 6,3); 
@@ -126,7 +124,7 @@ class MyGame extends engine.Scene {
         this.mGrid.setTileCollisionMode(true, 4,0);
 
         this.mGrid.createObject(this.mBushPic, 3,2);
-        this.mGrid.setTileCollisionMode(true, 3,2);
+        this.mGrid.setTileCollisionMode(true, 3,2); */
 
         this.mGrid.createObject(this.mBushPic, 3,4);
         this.mGrid.setTileCollisionMode(true, 3,4);
@@ -252,31 +250,16 @@ class MyGame extends engine.Scene {
             this.mGrid.moveObjectInDerection(0, 1, 0);
         }
 
-        if (engine.input.isKeyClicked(engine.input.keys.One)) {
-            this.next();
-        }
-
-    }
-
-    next() {
-        super.next(); 
-        let gameTwo = new GameTwo();
-        gameTwo.start();
     }
 }
 
 
-
-window.onload = function () {
+/* window.onload = function () {
     engine.init("GLCanvas");
 
-    /* let gameTwo = new GameTwo();
-    gameTwo.start(); */
-
-    let myGame = new MyGame();
-    myGame.start(); 
+    let myGame = new GameTwo();
+    myGame.start();
 }
+ */
 
-export default MyGame;
-
-
+export default GameTwo;
