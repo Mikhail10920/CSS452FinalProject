@@ -15,5 +15,9 @@ class Event {
 
     }
 
-    activate();
+    activate(){
+        return;
+    }
 }
+
+export default Event;
